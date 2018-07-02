@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="person">
+		<complexType>
+			<sequence>
+				<element name="firstName" type="string" minOccurs="1" />
+				<element name="lastName" type="string" minOccurs="1" />
+				<element name="childs" type="int" />
+				<element name="birthDate" type="string" minOccurs="1" />
+			</sequence>
+			<attribute name="sex">
+				<simpleType>
+					<restriction base="string">
+						<pattern value="M|F"></pattern>
+					</restriction>
+				</simpleType>
+			</attribute>
+
+		</complexType>
+	</element>
+
+
+</schema>

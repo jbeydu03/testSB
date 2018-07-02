@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.1">
+
+	<xs:complexType name="DonneeInterneSalto" abstract="true">
+		<xs:attribute name="VersionApplication" type="xs:string"
+			use="optional" />
+    <xs:attribute name="NomClient" type="xs:string" use="optional" />
+	</xs:complexType>
+
+
+	<xs:element name="Horloge">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="DonneeInterneSalto">
+					<xs:attribute name="heure" type="xs:long" use="required" />
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+	

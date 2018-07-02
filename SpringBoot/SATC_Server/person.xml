@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person sex="M">
+    <firstName>Andy</firstName>
+    <lastName>Warhol</lastName>
+    <childs>1</childs>
+    <birthDate>23 aout 2015</birthDate>
+</person>
